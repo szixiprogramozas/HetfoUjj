@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\KoleszGuyz\\.nuget\\packages\\": {}
+    "C:\\Users\\Laci\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KoleszGuyz\\Source\\Repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
+      "projectUniqueName": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
       "projectName": "legyenaneve",
-      "projectPath": "C:\\Users\\KoleszGuyz\\Source\\Repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
-      "packagesPath": "C:\\Users\\KoleszGuyz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KoleszGuyz\\Source\\Repos\\HetfoUjj\\legyenaneve\\obj\\",
+      "projectPath": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
+      "packagesPath": "C:\\Users\\Laci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KoleszGuyz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Laci\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

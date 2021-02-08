@@ -1,0 +1,13 @@
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.exe
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.deps.json
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.runtimeconfig.json
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.runtimeconfig.dev.json
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.dll
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.pdb
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.csprojAssemblyReference.cache
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.AssemblyInfoInputs.cache
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.AssemblyInfo.cs
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.csproj.CoreCompileInputs.cache
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.dll
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.pdb
+C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.genruntimeconfig.cache
