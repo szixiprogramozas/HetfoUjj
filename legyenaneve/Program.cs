@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -25,9 +26,12 @@ namespace legyenaneve
 
             Console.WriteLine("\n5. feladat:");
             Console.WriteLine(Otodikfel(adatok));
+
             Console.WriteLine("\n6. feladat:");
+            Hatodikfel(adatok);
 
             Console.WriteLine("\n7. feladat:");
+            Hetedikfel(adatok);
 
             Console.WriteLine("\n8. feladat:");
 
@@ -85,14 +89,40 @@ namespace legyenaneve
 
         static void Hatodikfel(Adatgyujtes[] adatok)
         {
-    
-    
+            StreamWriter f = new StreamWriter("ervenyes.txt");
+
+            HashSet<string> ervenyesszavazatok = new HashSet<string>();
+            for (int i = 0; i < adatok.Length; i++)
+            {
+                ervenyesszavazatok.Add(adatok[i].felhasznalo);
+            }
+
+            foreach (string item in ervenyesszavazatok)
+            {
+                f.WriteLine(item);
+            }
+
+            f.Flush();
+            f.Close();
         }
 
         static void Hetedikfel(Adatgyujtes[] adatok)
-        {
-        
-    
+        {  
+            for (int i = 0; i < adatok.Length; i++)
+            {
+                int c = 0;
+                for (int j = 0; j < adatok.Length; j++)
+                {
+                    if (adatok[i].felhasznalo == adatok[j].felhasznalo && i!=j)
+                    {
+                        c++;
+                    }
+                }
+                if (c==0)
+                {
+                    Console.WriteLine(adatok[i].felhasznalo);
+                }   
+            }
         }
 
         static void Nyolcadikfel()
