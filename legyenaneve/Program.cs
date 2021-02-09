@@ -17,10 +17,16 @@ namespace legyenaneve
         {
             Adatgyujtes[] adatok = new Adatgyujtes[1000];
             Elsofel(adatok);
-     
+
             Console.WriteLine("\n2. feladat:");
 
             Console.WriteLine("\n3. feladat:");
+            Console.Write("Adjon meg egy azonosítót: ");
+            string azonosito = Console.ReadLine();
+            Console.Write("Adja meg a nemét: ");
+            string nem = Console.ReadLine();
+            Console.Write("Adja meg,jhetente hány órát tölt internetezéssel: ");
+            string ora = Console.ReadLine();
 
             Console.WriteLine("\n4. feladat:");
 
@@ -37,8 +43,8 @@ namespace legyenaneve
 
             Console.ReadKey();
         }
-        static void Elsofel(Adatgyujtes[]adatok)
-        {         
+        static void Elsofel(Adatgyujtes[] adatok)
+        {
             string sor = "";
             int sorszam = 0;
             StreamReader file = new StreamReader("szavazas.txt");
@@ -58,20 +64,87 @@ namespace legyenaneve
         }
         static void Masodikfel()
         {
-    
-        
+            string sor = "";
+            int elsosor = 0;
+            bool ElsoSor = true;
+            while ((sor = file.ReadLine()) != null)
+            {
+                if (ElsoSor)
+                {
+                    elsosor = int.Parse(sor);
+                    ElsoSor = false;
+                }
+                else
+                {
+                    int SorHossz = sor.Length;
+                    int Meghaladta40et = SorHossz - 2;
+
+
+                    Meghaladta40et++;
+                }
+
+            }
+            file.Close();
+
+            int sorszam = 0;
+            int meghaladta_40et = 0;
+            for (int i = 0; i < sorszam; i++)
+            {
+                if (adatok[i][3] >= 40)
+                {
+                    string[] temp = adatok[i].Split(' ');
+                    for (int j = 0; j < temp[2].Length; j++)
+                    {
+                        if (temp[2][j] >= 40)
+                        {
+                            meghaladta_40et++;
+                        }
+
+                    }
+                }
+            }
+            Console.WriteLine("Adatok ahol az óraszámok meghaladták a 40-et: ", meghaladta_40et);
+
         }
 
-        static void Harmadikfel()
+        static void Harmadikfel(Adatgyujtes[] adatok)
         {
-    
-    
+            string x;
+            char t;
+            for (int i = 0; i < length; i++)
+            {
+                x = Console.ReadLine().ToUpper();
+                t = x[0];
+
+                if (adatok[i].Contains(t))
+                {
+
+                    Console.WriteLine("Ezt az azonosítót már valaki használta, írjon be egy újat: ", t);
+                    continue;
+                }
+
+            }
+
+
+
+
         }
 
         static void Negyedikfel()
         {
-        
-    
+            int sorszam = 0;
+
+            for (int i = 0; i < adatok.Length; i++)
+            {
+
+                if (adatok[i].felhasznalo == "nupafu")
+                {
+
+
+                    sorszam++;
+                }
+            }
+
         }
 
         static int Otodikfel(Adatgyujtes[] adatok)
@@ -79,7 +152,7 @@ namespace legyenaneve
             int internetoraszam = 0;
             for (int i = 0; i < adatok.Length; i++)
             {
-                if (adatok[i].nem=="F")
+                if (adatok[i].nem == "F")
                 {
                     internetoraszam += adatok[i].oraszam;
                 }
@@ -107,30 +180,61 @@ namespace legyenaneve
         }
 
         static void Hetedikfel(Adatgyujtes[] adatok)
-        {  
+        {
             for (int i = 0; i < adatok.Length; i++)
             {
                 int c = 0;
                 for (int j = 0; j < adatok.Length; j++)
                 {
-                    if (adatok[i].felhasznalo == adatok[j].felhasznalo && i!=j)
+                    if (adatok[i].felhasznalo == adatok[j].felhasznalo && i != j)
                     {
                         c++;
                     }
                 }
-                if (c==0)
+                if (c == 0)
                 {
                     Console.WriteLine(adatok[i].felhasznalo);
-                }   
+                }
             }
         }
 
         static void Nyolcadikfel()
         {
-    
-    
+            HashSet<string> komolytalanszavazok = new HashSet<string>();
+            for (int i = 0; i < adatok.Length; i++)
+            {
+                int c = 0;
+                int k = 0;
+                for (int j = 0; j < adatok.Length; j++)
+                {
+                    if (adatok[i].felhasznalo == adatok[j].felhasznalo && i != j)
+                    {
+                        c++;
+                    }
+                }
+                if (c >= 2)
+                {
+                    for (int j = 0; j < adatok.Length; j++)
+                    {
+                        if (adatok[i].felhasznalo == adatok[j].felhasznalo && i != j && (adatok[i].nem == "N" && adatok[j].nem == "F" || adatok[i].nem == "F" && adatok[j].nem == "N"))
+                        {
+                            k++;
+                        }
+                    }
+                    if (k > 0)
+                    {
+                        komolytalanszavazok.Add(adatok[i].felhasznalo);
+                    }
+
+                }
+            }
+            foreach (string item in komolytalanszavazok)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 
-    
+
 }

@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Laci\\.nuget\\packages\\": {}
+    "C:\\Users\\Adri\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
+      "projectUniqueName": "C:\\Users\\Adri\\Source\\Repos\\szixiprogramozas\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
       "projectName": "legyenaneve",
-      "projectPath": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
-      "packagesPath": "C:\\Users\\Laci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laci\\source\\repos\\HetfoUjj\\legyenaneve\\obj\\",
+      "projectPath": "C:\\Users\\Adri\\Source\\Repos\\szixiprogramozas\\HetfoUjj\\legyenaneve\\legyenaneve.csproj",
+      "packagesPath": "C:\\Users\\Adri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adri\\Source\\Repos\\szixiprogramozas\\HetfoUjj\\legyenaneve\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Laci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
