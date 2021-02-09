@@ -19,16 +19,13 @@ namespace legyenaneve
             Elsofel(adatok);
 
             Console.WriteLine("\n2. feladat:");
+            Masodikfel(adatok);
 
             Console.WriteLine("\n3. feladat:");
-            Console.Write("Adjon meg egy azonosítót: ");
-            string azonosito = Console.ReadLine();
-            Console.Write("Adja meg a nemét: ");
-            string nem = Console.ReadLine();
-            Console.Write("Adja meg,jhetente hány órát tölt internetezéssel: ");
-            string ora = Console.ReadLine();
+            Harmadikfel(adatok);
 
             Console.WriteLine("\n4. feladat:");
+            Console.WriteLine(Negyedikfel(adatok));
 
             Console.WriteLine("\n5. feladat:");
             Console.WriteLine(Otodikfel(adatok));
@@ -40,7 +37,7 @@ namespace legyenaneve
             Hetedikfel(adatok);
 
             Console.WriteLine("\n8. feladat:");
-
+            Nyolcadikfel(adatok);
             Console.ReadKey();
         }
         static void Elsofel(Adatgyujtes[] adatok)
@@ -62,75 +59,49 @@ namespace legyenaneve
 
             file.Close();
         }
-        static void Masodikfel()
+        static void Masodikfel(Adatgyujtes[] adatok)
         {
-            string sor = "";
-            int elsosor = 0;
-            bool ElsoSor = true;
-            while ((sor = file.ReadLine()) != null)
+            for (int i = 0; i < adatok.Length; i++)
             {
-                if (ElsoSor)
+                if (adatok[i].oraszam >= 40)
                 {
-                    elsosor = int.Parse(sor);
-                    ElsoSor = false;
-                }
-                else
-                {
-                    int SorHossz = sor.Length;
-                    int Meghaladta40et = SorHossz - 2;
-
-
-                    Meghaladta40et++;
-                }
-
-            }
-            file.Close();
-
-            int sorszam = 0;
-            int meghaladta_40et = 0;
-            for (int i = 0; i < sorszam; i++)
-            {
-                if (adatok[i][3] >= 40)
-                {
-                    string[] temp = adatok[i].Split(' ');
-                    for (int j = 0; j < temp[2].Length; j++)
-                    {
-                        if (temp[2][j] >= 40)
-                        {
-                            meghaladta_40et++;
-                        }
-
-                    }
+                    Console.WriteLine(adatok[i].felhasznalo + " " + adatok[i].nem + " " + adatok[i].oraszam);
                 }
             }
-            Console.WriteLine("Adatok ahol az óraszámok meghaladták a 40-et: ", meghaladta_40et);
-
         }
+
 
         static void Harmadikfel(Adatgyujtes[] adatok)
         {
-            string x;
-            char t;
-            for (int i = 0; i < length; i++)
+            bool x = false;
+            Console.Write("Adja meg az azonosítóját: ");
+            string nev = Console.ReadLine();
+            for (int i = 0; i < adatok.Length; i++)
             {
-                x = Console.ReadLine().ToUpper();
-                t = x[0];
-
-                if (adatok[i].Contains(t))
+                if (adatok[i].felhasznalo == nev)
                 {
-
-                    Console.WriteLine("Ezt az azonosítót már valaki használta, írjon be egy újat: ", t);
-                    continue;
+                    x = true;
                 }
-
             }
-
-
-
+            if (x)
+            {
+                Console.WriteLine("Ez az azonosító már szavazott!");
+            }
+            if (x == false)
+            {
+                Console.Write("Adja meg a nemét: ");
+                string nem = Console.ReadLine();
+                Console.Write("Adja meg az oraszamot: ");
+                int szam = int.Parse(Console.ReadLine());
+                adatok[824].felhasznalo = nev;
+                adatok[824].nem = nem;
+                adatok[824].oraszam = szam;
+            }
 
         }
 
-        static void Negyedikfel()
+
+        static int Negyedikfel(Adatgyujtes[] adatok)
         {
             int sorszam = 0;
 
@@ -144,7 +115,7 @@ namespace legyenaneve
                     sorszam++;
                 }
             }
-
+            return sorszam;
         }
 
         static int Otodikfel(Adatgyujtes[] adatok)
@@ -198,7 +169,7 @@ namespace legyenaneve
             }
         }
 
-        static void Nyolcadikfel()
+        static void Nyolcadikfel(Adatgyujtes[] adatok)
         {
             HashSet<string> komolytalanszavazok = new HashSet<string>();
             for (int i = 0; i < adatok.Length; i++)

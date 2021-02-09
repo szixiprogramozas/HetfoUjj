@@ -11,3 +11,16 @@ C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenan
 C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.dll
 C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.pdb
 C:\Users\Laci\Source\Repos\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.genruntimeconfig.cache
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.exe
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.deps.json
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.runtimeconfig.json
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.runtimeconfig.dev.json
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.dll
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\bin\Debug\netcoreapp3.1\legyenaneve.pdb
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.csprojAssemblyReference.cache
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.AssemblyInfoInputs.cache
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.AssemblyInfo.cs
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.csproj.CoreCompileInputs.cache
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.dll
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.pdb
+C:\Users\Adri\Source\Repos\szixiprogramozas\HetfoUjj\legyenaneve\obj\Debug\netcoreapp3.1\legyenaneve.genruntimeconfig.cache
